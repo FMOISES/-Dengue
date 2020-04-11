@@ -1,2 +1,2 @@
 # -Dengue
-Front-End de aplicação criada para entrega como trabalho de atividade interdisciplinar na Unopar (Universidade do Norte do Paraná). Na aplicação o usuário pode realizar denuncias de focos de dengue após o login na aplicação.
+Application front-end created for delivery as interdisciplinary work at Unopar (University of Northern Paraná). An application or user can make reports of dengue outbreaks after logging into the application.
