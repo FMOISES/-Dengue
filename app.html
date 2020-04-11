@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--importação do bootstrap para projeto inicio-->
+
+    <link rel="stylesheet" href="css//bootstrap/bootstrap.min.css">
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!--importação do bootstrap para projeto final-->
+
+    <!--normalização de css,para aprimorar a apresentação das paginas e padronização-->
+    <style type="text/css">
+        @import url(css/normalize.css);
+        @import url(css/estilo.css);
+    </style>
+    <!--icones-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <title></title>
+</head>
+
+<body class="container">
+    <!--inicio do cabeçario-->
+    <header>
+        <nav class="navbar  navbar-expand-md navbar-dark bg-dark  ">
+            <!--divisão principal-->
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <!--logo da barra-->
+                    <A name="home"> <img src="imagens/mosquito.png" width="142">
+                        <h5 class="text-white h4">@Dengue</h5>
+                    </A>
+                </a>
+                <!--inicio do conteudo do menu-->
+                <div class="pos-f-t">
+                    <div class="collapse navbar-collapse" id="botao-principal">
+                        <div class="bg-dark p-4">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a href="#home" class="nav-link">Home</a>
+                                </li>
+
+                                <li>
+                                    <!--botão que chama modal app Sobre o Aedes Aegypti-->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#mosquito">
+                                        Sobre o Aedes Aegypti
+                                    </button>
+                                </li>
+                                <li>
+                                    <!--botão que chama modal app sobre o app-->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#app">
+                                        Sobre o @Dengue
+                                    </button>
+                                </li>
+                                <li>
+                                    <!--botão que chama modal app realizar denuncia-->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#denuncia">
+                                        Realizar Denuncia
+                                    </button>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!--final do conteudo do menu-->
+                    <!--inicio botão que expande menu-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#botao-principal"
+                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--final botão que expande menu-->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--final do cabeçario-->
+    <section style="background-image: url(imagens/app.jpg);background-repeat: no-repeat; background-size: cover;">
+        <!--inicio de section app-->
+        <div class="jumbotron jumbotron-fluid col-md-7" style="opacity: 0.7; margin: 0 auto;">
+            <div class="container">
+                <h1 class="display-4"><a name="app">Sintomas da Dengue</a></h1>
+                <p class="lead">A infecção por dengue pode ser assintomática (sem sintomas), leve ou grave. Neste último
+                    caso pode levar até a morte. Normalmente, a primeira manifestação da dengue é a febre alta (39° a
+                    40°C), de início abrupto, que geralmente dura de 2 a 7 dias, acompanhada de dor de cabeça, dores no
+                    corpo e articulações, além de prostração, fraqueza, dor atrás dos olhos, erupção e coceira na pele.
+                    Perda de peso, náuseas e vômitos são comuns. Em alguns casos também apresenta manchas vermelhas na
+                    pele.
+
+                    Na fase febril inicial da dengue, pode ser difícil diferenciá-la. A forma grave da doença inclui dor
+                    abdominal intensa e contínua, vômitos persistentes e sangramento de mucosas. Ao apresentar os
+                    sintomas, é importante procurar um serviço de saúde para diagnóstico e tratamento adequados, todos
+                    oferecidos de forma integral e gratuita por meio do Sistema Único de Saúde (SUS).
+                </p>
+            </div>
+        </div>
+        <!--inicio do app-->
+
+        <!-- Modal denuncia -->
+        <div class="modal fade" id="denuncia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Realizar denuncia</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form class="was-validated">
+                            <div>
+                                <label for="validationCustom03">Cidade</label>
+                                <input type="text" class="form-control" id="validationCustom03"
+                                    placeholder="Digite a cidade" required>
+                                <div class="invalid-feedback">
+                                    Por favor, em que cidade está o foco de dengue?.
+                                </div>
+                            </div>
+                            <div>
+                                <label for="validationCustom04">Estado</label>
+                                <select class="custom-select" id="validationCustom04" required>
+                                    <option selected disabled value="">selecione o estado do foco...</option>
+                                    <option>AC</option>
+                                    <option>AL</option>
+                                    <option>AP</option>
+                                    <option>AM</option>
+                                    <option>BA</option>
+                                    <option>CE</option>
+                                    <option>DF</option>
+                                    <option>ES</option>
+                                    <option>GO</option>
+                                    <option>MA</option>
+                                    <option>MT</option>
+                                    <option>MS</option>
+                                    <option>MG</option>
+                                    <option>PA</option>
+                                    <option>PB</option>
+                                    <option>PR</option>
+                                    <option>PE</option>
+                                    <option>PI</option>
+                                    <option>RJ</option>
+                                    <option>RN</option>
+                                    <option>RS</option>
+                                    <option>RO</option>
+                                    <option>RR</option>
+                                    <option>SC</option>
+                                    <option>SP</option>
+                                    <option>SE</option>
+                                    <option>TO</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor, escolha o estado.
+                                </div>
+                            </div>
+                            <div>
+                                <label for="validationCustom02">Endereço</label>
+                                <input type="text" class="form-control" id="validationCustom07"
+                                    placeholder="digite seu Endereço" required>
+                                <div class="valid-feedback">
+                                    Endereço valido
+                                </div>
+                                <div class="invalid-feedback">
+                                    Endereço invalido!
+                                </div>
+                            </div>
+                            <div>
+                                <label for="validationCustom02">Bairro</label>
+                                <input type="text" class="form-control" id="validationCustom08"
+                                    placeholder="digite seu Bairro" required>
+                                <div class="valid-feedback">
+                                    Celular Bairro
+                                </div>
+                                <div>
+                                    <label for="validationTextarea">Descrição obrigatória com o relato do local</label>
+                                    <textarea class="form-control is-invalid" id="validationTextarea"
+                                        placeholder="Descreva onde estava o foco de dengue?" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Por favor, desecreva só assim poderemos ajudar.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        obrigado, tomaremos as devidas medidas para solucionar.
+                                    </div>
+                                </div>
+
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                    <label class="custom-file-label" for="validatedCustomFile">anexar foto ou
+                                        video...</label>
+                                    <div class="invalid-feedback">Por favor nos mostre o local</div>
+                                    <div class="valid-feedback">
+                                        obrigado, por nos mostrar.
+                                    </div>
+                                </div>
+                        </form>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Salvar denuncia</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fim Modal denuncia-->
+        <!--fim do app-->
+
+        <!--fim de section app-->
+    </section>
+    <section>
+        <!--inicio de section sobre o mosquito-->
+        <!-- Modal -->
+        <div class="modal fade" id="mosquito" data-backdrop="static" tabindex="-1" role="dialog"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog mw-100 w-75" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Informações</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body"
+                        style="background-image: url(imagens/app.jpg);background-repeat: no-repeat;background-size: cover;">
+                        <div class="jumbotron jumbotron-fluid col-md-12" style="opacity: 0.7;">
+                            <div class="container">
+                                <h1 class="display-4"><a name="sobre">Sobre o Aedes Aegypti</a></h1>
+                                <p class="lead">O Aedes aegypti é o mosquito transmissor da dengue e da febre amarela
+                                    urbana.
+                                    Originário da África, foi disseminado de forma passiva pelo homem, hoje é
+                                    considerado um
+                                    mosquito cosmopolita.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fim de section sobre o mosquito-->
+    </section>
+    <section>
+        <!--inicio sobre o app-->
+
+        <div class="modal fade" id="app" data-backdrop="static" tabindex="-1" role="dialog"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog mw-100 w-75" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">@Dengue</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body"
+                        style="background-image: url(imagens/app.png);background-repeat: no-repeat;background-size: cover;">
+                        <div class="jumbotron jumbotron-fluid col-md-12" style="opacity: 0.9;">
+                            <div class="container">
+                                <h1 class="display-4"><a name="sobre">Sobre o Aplicativo</a></h1>
+                                <p class="lead"> Pensando no aumento dos casos de dengue no brasil, foi criado o
+                                    @dengue. Nele é
+                                    possivel realizar denuncias de casos de dengue e acompanhar a resposta do ministerio
+                                    da
+                                    saúde.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--fim sobre o app-->
+    </section>
+
+    <!--inicio do rodapé-->
+    <footer class="mt-4 mb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        <a href="index.html">Home</a>
+                        <a href="#sobre">Sobre o Aedes Aegypti</a>
+                        <a href="#app">Sobre o @Dengue</a>
+                    </p>
+                </div>
+                <div class="col-md-4 d-flex justify-content-end">
+                    <a href="" class="btn btn-outline-dark">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="btn btn-outline-dark ml-2">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="btn btn-outline-dark ml-2">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="btn btn-outline-dark ml-2">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--final do rodapé-->
+
+</body>
+
+</html>

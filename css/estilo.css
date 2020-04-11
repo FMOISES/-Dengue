@@ -1,0 +1,16 @@
+@charset "utf-8";
+div .row .col-6 .imagem{
+    width: 100%;
+}
+.row{
+    margin-top: 5px;
+}
+div .row .col-6 .imagem{
+    width: 100%;
+}
+footer .container .row .col-md-8 a{
+    margin: 10px;
+}
+nav .container li{
+    margin: 5px;
+}

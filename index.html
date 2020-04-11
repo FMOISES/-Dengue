@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--importação do bootstrap para projeto inicio-->
+
+    <link rel="stylesheet" href="css//bootstrap/bootstrap.min.css">
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!--importação do bootstrap para projeto final-->
+
+    <!--normalização de css,para aprimorar a apresentação das paginas e padronização-->
+    <style type="text/css">
+        @import url(css/normalize.css);
+        @import url(css/estilo.css);
+    </style>
+    <!--icones-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <title></title>
+</head>
+
+<body class="container">
+    <!--inicio do cabeçario-->
+    <header>
+        <nav class="navbar  navbar-expand-md navbar-dark bg-dark  ">
+            <!--divisão principal-->
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <!--logo da barra-->
+                    <A name="home"> <img src="imagens/mosquito.png" width="142">
+                        <h5 class="text-white h4">@Dengue</h5>
+                    </A>
+                </a>
+                <!--inicio do conteudo do menu-->
+                <div class="pos-f-t">
+                    <div class="collapse navbar-collapse" id="botao-principal">
+                        <div class="bg-dark p-4">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a href="#home" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#sobre" class="nav-link">Sobre o Aedes Aegypti</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#app" class="nav-link">Sobre o @Dengue</a>
+                                </li>
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModalLong">
+                                    Cadastro de Usuario
+                                </button>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!--final do conteudo do menu-->
+                    <!--inicio botão que expande menu-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#botao-principal"
+                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--final botão que expande menu-->
+                </div>
+            </div>
+        </nav>
+
+        <!--inicio do carrocel-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagens/banner_1.jpg" class="d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="imagens/banner_2.jpg" class="d-block w-100" alt="...">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/banner_3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
+                    </div>
+                </div>
+                <a class="carousel-control-prev" class="bg-dark" href="#carouselExampleCaptions" role="button"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!--fim do carrocel-->
+
+    </header>
+    <!--final do cabeçario-->
+    <!--inicio seção de sobre o mosquito-->
+    <section class="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 d-none d-md-block"><img class="imagem" src="imagens/mosquito.png"></div>
+
+                <div class="jumbotron jumbotron-fluid col-md-6">
+                    <div class="container">
+                        <h1 class="display-4"><a name="sobre">Sobre o Aedes Aegypti</a></h1>
+                        <p class="lead">O Aedes aegypti é o mosquito transmissor da dengue e da febre amarela urbana.
+                            Originário da África, foi disseminado de forma passiva pelo homem, hoje é considerado um
+                            mosquito cosmopolita.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--fim seção de sobre o mosquito-->
+
+    <!--inicio seção de sobre o App-->
+    <section class="sobre">
+        <div class="container">
+            <div class="row">
+
+                <div class="jumbotron jumbotron-fluid col-md-7">
+                    <div class="container">
+                        <h1 class="display-4"><a name="app">Sobre o Aplicativo</a></h1>
+                        <p class="lead"> Pensando no aumento dos casos de dengue no brasil, foi criado o @dengue. Nele é
+                            possivel realizar denuncias de casos de dengue e acompanhar a resposta do ministerio da
+                            saúde. para começar a usar é simples clique no botão abaixo:</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalLong">
+                            Cadastro de Usuario
+                        </button>
+
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <img class="imagem" class="col-6 d-none d-md-block" src="imagens/app.png">
+                </div>
+            </div>
+
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Cadastro de Usuario</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!--inicio de formulario em forma de modal-->
+                        <form class="needs-validation" action="app.html">
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom01">nome</label>
+                                    <input type="text" class="form-control" id="validationCustom01"
+                                        placeholder="digite seu nome" required>
+                                    <div class="valid-feedback">
+                                        Nome valido
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        nome invalido!
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom02">Sobrenome</label>
+                                    <input type="text" class="form-control" id="validationCustom02"
+                                        placeholder="digite seu sobrenome" required>
+                                    <div class="valid-feedback">
+                                        Sobrenome valido
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        sobrenome invalido!
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom02">Cpf</label>
+                                    <input type="text" class="form-control" id="validationCustom04"
+                                        placeholder="digite seu cpf" required>
+                                    <div class="valid-feedback">
+                                        Cpf valido
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        cpf invalido!
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom02">Rg</label>
+                                    <input type="text" class="form-control" id="validationCustom05"
+                                        placeholder="digite seu Rg" required>
+                                    <div class="valid-feedback">
+                                        Rg valido
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Rg invalido!
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom02">Celular</label>
+                                    <input type="text" class="form-control" id="validationCustom06"
+                                        placeholder="digite seu celular" required>
+                                    <div class="valid-feedback">
+                                        Celular valido
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Celular invalido!
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustomUsername">Nome de Usuario</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                        </div>
+                                        <input type="text" class="form-control" id="validationCustomUsername"
+                                            aria-describedby="inputGroupPrepend" required>
+                                        <div class="invalid-feedback">
+                                            digite um usuario valido
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom03">Cidade</label>
+                                    <input type="text" class="form-control" id="validationCustom03" required>
+                                    <div class="invalid-feedback">
+                                        Por favor, em que cidade você mora?.
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationCustom04">Estado</label>
+                                    <select class="custom-select" id="validationCustom04" required>
+                                        <option selected disabled value="">selecione o seu estado...</option>
+                                        <option>AC</option>
+                                        <option>AL</option>
+                                        <option>AP</option>
+                                        <option>AM</option>
+                                        <option>BA</option>
+                                        <option>CE</option>
+                                        <option>DF</option>
+                                        <option>ES</option>
+                                        <option>GO</option>
+                                        <option>MA</option>
+                                        <option>MT</option>
+                                        <option>MS</option>
+                                        <option>MG</option>
+                                        <option>PA</option>
+                                        <option>PB</option>
+                                        <option>PR</option>
+                                        <option>PE</option>
+                                        <option>PI</option>
+                                        <option>RJ</option>
+                                        <option>RN</option>
+                                        <option>RS</option>
+                                        <option>RO</option>
+                                        <option>RR</option>
+                                        <option>SC</option>
+                                        <option>SP</option>
+                                        <option>SE</option>
+                                        <option>TO</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Por favor, escolha seu estado.
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom02">Endereço</label>
+                                    <input type="text" class="form-control" id="validationCustom07"
+                                        placeholder="digite seu Endereço" required>
+                                    <div class="valid-feedback">
+                                        Endereço valido
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Endereço invalido!
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom02">Bairro</label>
+                                    <input type="text" class="form-control" id="validationCustom08"
+                                        placeholder="digite seu Bairro" required>
+                                    <div class="valid-feedback">
+                                        Celular Bairro
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Celular invalido!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        Eu aceito os termos e as condições de uso
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        Aceite para continuar
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                <button class="btn btn-primary" type="submit">Salvar Cadastro</button>
+                            </div>
+                        </form>
+                        <!--final de formulario em forma de modal-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--inicio do controlador do formulario-->
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+        </script>
+        <!--fim do controlador do formulario-->
+
+        <!--fim Modal-->
+
+    </section>
+
+
+    <!--inicio do rodapé-->
+    <footer class="mt-4 mb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        <a href="index.html">Home</a>
+                        <a href="#sobre">Sobre o Aedes Aegypti</a>
+                        <a href="#app">Sobre o @Dengue</a>
+                    </p>
+                </div>
+                <div class="col-md-4 d-flex justify-content-end">
+                    <a href="" class="btn btn-outline-dark">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="btn btn-outline-dark ml-2">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="btn btn-outline-dark ml-2">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="btn btn-outline-dark ml-2">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--final do rodapé-->
+
+</body>
+
+</html>
